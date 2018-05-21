@@ -1,0 +1,6 @@
+<ng-content></ng-content>
+<ul class="todo-list">
+  <li *ngFor="let todo of todoList">
+    <todo-item [todo]="todo" (onChangeStatus)="onChangeStatus($event)"></todo-item>
+  </li>
+</ul>
